@@ -1,0 +1,65 @@
+/* Service Css */
+
+.service .container{
+    padding-bottom: 20px;
+}
+
+.service .service-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.service .service-item .service-item-inner{
+    text-align: center;
+    padding: 30px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: var(--bg-black-100);
+    border: 1px solid var( --bg-black-50);
+}
+
+.service .service-item .service-item-inner .icon{
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    transition: all 0.3s ease;
+}
+ 
+.service .service-item .service-item-inner .icon .fa{
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition: all 0.3s ease;
+}
+
+
+.service .service-item .service-item-inner h4{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+
+.service .service-item .service-item-inner p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+
+
+
+
+
+/* Service Animation */
+
+.service .service-item .service-item-inner.animation-Dp-Service.Downup{
+    animation-name: Downup;
+    animation-timing-function: ease-in;
+}
+
+/* Service Animation */

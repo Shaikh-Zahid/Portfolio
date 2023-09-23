@@ -1,0 +1,183 @@
+/*  Media Query Responsive */
+
+@media only screen and (max-width: 1199px) {
+
+    /* Section All */
+
+    .section .container{
+        padding-top: 70px;
+    }
+
+    /* Section All*/
+
+
+    
+    /* Home Section  */
+
+    .aside{
+        left: -280px;
+        transition: all 0.5s ease;
+    }
+
+    .aside.open{
+        left: 0px;
+        transition: all 0.5s ease;
+    }
+
+    .aside .nav-toggle.open{
+        left: 300px;
+        transition: all 0.5s ease;
+    }
+
+    .aside .nav-toggle{
+        left: 30px;
+        display: flex;
+        transition: all 0.5s ease;
+    }
+
+    .section{
+        left: 0px;
+        transition: all 0.5s ease;
+    }
+
+    .section.open{
+        left: 270px;
+        transition: all 0.5s ease;
+    }
+
+    .home-img.long::before{
+        left: 12px;
+        transition: all 0.5s ease;
+    }
+
+
+
+    .home .home-img img.size {
+        width: 260px;
+        height: 260px;
+        transition: all 0.5s ease;
+    }
+
+    .home-img.close::after{
+        right: 12px;
+        bottom: 40px;
+        transition: all 0.5s ease;
+    }
+
+
+    /* Home Section  */
+
+
+    /* About Section */
+
+    .about .about-content .personal-info .info-item p span{
+        display: block;
+        margin-left: 0px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 991px) {
+
+    /* Home Section */
+
+    .home .home-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .home .home-img
+    {
+        display: none;
+    }
+
+    /* Home Section */
+
+
+    /* Service Section */
+
+    .service .service-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* Service Section */
+
+
+    /* Portfolio Section */
+
+    .portfolio .portfolio-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* Portfolio Section */
+
+
+    /* Contact Section */
+
+    .contact .contact-info-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* Contact Section */
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    
+    /* About Section */
+
+    .about .about-content .personal-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about .about-content .skills{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+     .about .about-content .education , 
+     .about .about-content .experience{
+        flex:  0 0 100%;
+        max-width: 100%;
+    }
+
+    /* About Sections */
+
+
+
+    /* Service Sections */
+
+    .service .service-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Service Sections */
+
+
+    /* Portfolio Sections */
+
+    .portfolio .portfolio-item{
+        flex:  0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Portfolio Sections */
+
+
+    /* Contact Sections */
+
+    .contact .contact-form .col-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Contact Sections */
+}

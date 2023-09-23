@@ -1,0 +1,228 @@
+/* Animation Css */
+
+
+/* Aside Animation */
+
+@keyframes Slidernav {
+    0%{
+        opacity: 0;
+        transition-timing-function: ease-in-out;
+    }
+    25%{
+        opacity: 0;
+        transform: translateX(-100px);
+        transition-timing-function: ease-in-out;
+    }
+    50%{
+        opacity: 0;
+        transform: translateX(-50px);
+        transition-timing-function: ease-in-out;
+    }
+    75%{
+        opacity: 1;
+        transform: translateX(0px);
+        transition-timing-function: ease-in-out;
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.aside .nav-toggle.open span{
+    background-color: transparent;
+}
+
+.aside .nav-toggle.open span::before{
+    top: 0px;
+    transform: rotate(45deg);
+}
+
+.aside .nav-toggle.open span::after{
+    top: 0px;
+    transform: rotate(-45deg);
+}
+
+
+/* Aside Animation */
+
+
+
+
+
+
+
+
+/* Home Animation */
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.home .home-info-social-icon li a:hover::before {
+    transform: scale(1.1);
+}
+
+@keyframes sliderSection {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes scale {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+@keyframes Downup{
+    0% {
+        opacity: 0;
+        transition-timing-function: ease-in-out;
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateY(100px);
+        transition-timing-function: ease-in-out;
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(50px);
+        transition-timing-function: ease-in-out;
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateY(0px);
+        transition-timing-function: ease-in-out;
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Home Animation */
+
+
+
+
+
+
+
+
+
+
+
+/* About Animation */
+
+@keyframes Downflip{
+    0%{
+        opacity: 0;
+        transition-timing-function: ease-in;
+    }
+    50%{
+        opacity: 0;
+        transform: rotateX(100deg);
+        transition-timing-function: ease-in;
+    }
+    100%{
+        transform: none;
+        transition-timing-function: ease-in;
+    }
+}
+
+
+
+@keyframes progressbar {
+    0%{
+        opacity: 0;
+        width: 0px;
+        transition-timing-function: ease-in;
+    }
+    100%{
+        opacity: 1;
+        transition-timing-function: ease-in;
+    }
+}
+
+/* About Animation */
+
+
+
+
+
+
+/* Servies Animation */
+
+.service .service-item .service-item-inner:hover {
+    box-shadow: 0 0 20px rgb(48, 46, 77, 0.15);
+}
+
+.service .service-item .service-item-inner .icon:hover {
+    background-color: var(--skin-color);
+}
+
+.service .service-item .service-item-inner .icon:hover .fa {
+    color: #fff;
+    font-size: 25px;
+}
+
+/* Servies Animation */
+
+
+
+
+
+/* Porfolio Animation */
+
+.portfolio .portfolio-item-inner:hover {
+    transform: scale(1.1);
+}
+
+
+.portfolio .portfolio-item-inner .portfolio-img .animation-scroll:hover {
+    background-position: bottom;
+}
+
+/* Porfolio Animation */
+
+
+
+
+
+
+
+
+
+/* Contact Animation */
+
+.contact .contact-form .form-item .form-control:focus {
+    box-shadow: 0 0 20px rgb(48, 46, 77, 0.15);
+}
+
+/* Contact Animation */

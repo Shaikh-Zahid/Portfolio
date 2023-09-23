@@ -1,0 +1,59 @@
+/* Portfolio Css */
+
+.portfolio .portfolio-heading {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.portfolio .portfolio-heading h2{
+    font-weight: 500;
+    color: var(--text-black-900);
+}
+
+.portfolio .portfolio-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.portfolio .portfolio-item-inner{
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    border: 6px solid var(--bg-black-50);
+}
+
+.portfolio .portfolio-item-inner .portfolio-img{
+    height: 250px;
+}
+
+.portfolio .portfolio-item-inner .portfolio-img .portfolio-project-img{
+    height: 250px;
+    background-size: contain;
+    background-position: center;
+    background-image: url('img-project/project2.jpg');
+}
+
+.portfolio .portfolio-item-inner .portfolio-img .animation-scroll{
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    transition: all 4s ease-in-out;
+}
+
+
+/* Animation Portfolio */
+
+.portfolio .portfolio-heading.animation-Dp-Portfolio.Downup{
+    animation-name: Downup;
+    animation-timing-function: ease;
+}
+
+.portfolio .portfolio-item .portfolio-item-inner.animation-Op-Portfolio.Opacity{
+    animation-name: opacity;
+    animation-timing-function: ease-in;
+}
+
+/* Animation Portfolio */

@@ -1,0 +1,485 @@
+/* Home Css */
+
+:root {
+    --skin-color: #ec1839;
+    --bg-black-50: #e8dfec;
+    --icon-color-i: #0072b1;
+    --icon-color-f: #1877F2;
+    --icon-color-t: #00acee;
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --icon-color-in: #000000;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+    --text-black-800: #302e4d26;
+}
+
+body.dark {
+    --icon-color-i: #fff;
+    --icon-color-f: #fff;
+    --icon-color-t: #fff;
+    --icon-color-in: #fff;
+    --bg-black-50: #393939;
+    --bg-black-900: #151515;
+    --bg-black-100: #222222;
+    --text-black-900: #ffffff;
+    --text-black-700: #e9e9e9;
+}
+
+body {
+    font-size: 16px;
+    /* line-height: 1.5px; */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+/* NavBar - Side & Logo */
+
+.section {
+    top: 0px;
+    left:270px;
+    right: 0px;
+    opacity: 1;
+    z-index: 0;
+    bottom: 0px;
+    display: block;
+    position: fixed;
+    padding: 0 30px;
+    overflow-y: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: var(--bg-black-900);
+}
+
+.section.back-section{
+    z-index: 1;
+}
+
+.section.active{
+    z-index: 2;
+    opacity: 1;
+    animation: sliderSection 1s ease;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.main-content {
+    padding-left: 270px;
+}
+
+.padd-15 {
+    padding: 0px 15px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    max-width: 1100px;
+}
+
+.section .container {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 70px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    color: var(--text-black-900);
+}
+
+.section-title h2::before {
+    top: 100%;
+    left: 0px;
+    width: 50px;
+    content: '';
+    height: 4px;
+    position: absolute;
+    background-color: var(--skin-color);
+}
+
+
+.section-title h2::after {
+    top: 100%;
+    left: 0px;
+    width: 25px;
+    content: '';
+    height: 4px;
+    margin-top: 10px;
+    position: absolute;
+    background-color: var(--skin-color);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.btn {
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 35px;
+    border-radius: 35px;
+    white-space: nowrap;
+    display: inline-block;
+    transition: all 0.3s ease;
+    background-color: var(--skin-color);
+}
+
+.aside {
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    height: 100%;
+    width: 280px;
+    padding: 30px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-black-100);
+    border-right: 1px solid var(--bg-black-50);
+}
+
+.aside .logo {
+    top: 80px;
+    /*pre-50*/
+    font-size: 35px;
+    /*pre-30*/
+    position: absolute;
+    text-transform: capitalize;
+}
+
+.aside .logo a {
+    font-size: 35px;
+    /*pre-30*/
+    font-weight: 700;
+    position: relative;
+    padding: 15px 20px;
+    letter-spacing: 5px;
+    color: var(--text-black-900);
+}
+
+.aside .logo a span {
+    font-size: 40px;
+    font-family: 'Clicker Script', cursive;
+}
+
+.aside .logo a::before {
+    left: 0px;
+    content: "";
+    width: 20px;
+    bottom: 0px;
+    height: 20px;
+    position: absolute;
+    border-left: 5px solid var(--skin-color);
+    border-bottom: 5px solid var(--skin-color);
+
+}
+
+.aside .logo a::after {
+    top: 0px;
+    right: 0px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+}
+
+.aside .nav-toggle {
+    top: 20px;
+    left: 300px;
+    width: 45px;
+    height: 40px;
+    display: flex;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s ease;
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+}
+
+.aside .nav-toggle span {
+    width: 18px;
+    height: 2px;
+    background: red;
+    position: relative;
+    display: inline-block;
+}
+
+.aside .nav-toggle span::before {
+    top: -6px;
+    left: 0px;
+    width: 18px;
+    content: '';
+    height: 1px;
+    background: red;
+    position: absolute;
+}
+
+.aside .nav-toggle span::after {
+    top: 6px;
+    left: 0px;
+    width: 18px;
+    content: '';
+    height: 1px;
+    background: red;
+    position: absolute;
+}
+
+.aside .nav {
+    margin-top: 50px;
+}
+
+.aside .nav li {
+    display: block;
+    margin-bottom: 25px;
+    /*pre-20*/
+}
+
+.aside .nav li a {
+    display: block;
+    font-size: 18px;
+    /*pre-16*/
+    font-weight: 600;
+    padding: 5px 15px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+
+.aside .nav li a.active {
+    color: var(--skin-color);
+}
+
+.aside .nav li a i {
+    margin-right: 15px;
+}
+
+
+
+/* Animation Aside  */
+
+.aside .nav li{
+    animation-delay: 0.1s;
+    animation-name: Slidernav;
+    animation-timing-function: ease;
+}
+
+/* Animation Aside */
+
+
+/* Aside & Navbar & Logo */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Home Page */
+
+.home {
+    display: flex;
+    min-height: 100vh;
+    color: var(--text-black-900);
+}
+
+.home .home-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+h3.hello {
+    margin: 20px 0;
+    /*pre-15*/
+    font-size: 30px;
+    /*pre-28*/
+}
+
+h3.hello span {
+    font-size: 32px;
+    /*pre-30 */
+    font-weight: 700;
+    color: var(--skin-color);
+    font-family: 'Clicker Script', cursive;
+}
+
+h3.my-profession {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.typing {
+    color: var(--skin-color);
+}
+
+.home-info p {
+    line-height: 25px;
+    margin: 0px 0px 25px;
+    color: var(--text-black-700);
+}
+
+.home .home-img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    position: relative;
+    text-align: center;
+}
+
+.home-img::before {
+    top: -40px;
+    left: 20px;
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+}
+
+.home-img::after {
+    content: '';
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    bottom: -40px;
+    position: absolute;
+    border-right: 10px solid var(--skin-color);
+    border-bottom: 10px solid var(--skin-color);
+}
+
+.home .home-img img {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.home .home-info-social-icon{
+    margin: 0px 0px 10px 0px;
+}
+
+.home .home-info-social-icon li{
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 20px 20px 0px;
+    transition: all 0.5s ease;
+    border: 1px solid var(--bg-black-50);
+}
+
+.home .home-info-social-icon li a{
+    position: relative;
+    z-index: 1;
+} 
+
+.home .home-info-social-icon li a::before{
+    left: 0px;
+    right: 0px;
+    top: -11px;
+    bottom: 0px;
+    content: '';
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(0.0);
+    transition: all 0.3s ease;
+    background-color: var(--skin-color);
+}
+
+.home .home-info-social-icon li a i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.home .home-info-social-icon li .f-facebook{
+    color: var(--icon-color-f);
+}
+
+.home .home-info-social-icon li .f-linkedin{
+    color: var(--icon-color-i);
+}
+
+.home .home-info-social-icon li .f-twitter{
+    color: var(--icon-color-t);
+}
+
+.home .home-info-social-icon li .fa-instagram{
+    color: var(--icon-color-in);
+}
+
+
+
+
+
+/* Home Animation */
+
+.home .home-img.animation-Sc-Home.Scale{
+    animation: scale 6s 0.1s ease;
+}
+
+.animation-Dp-Home.Downup{
+    animation-name: Downup;
+    animation-timing-function: ease;
+}
+
+.home .home-info-social-icon .animation-Op-Home.Opacity{
+    animation-delay: 0.1s;
+    animation-duration: 4s;
+    animation-name: opacity;
+    animation-timing-function: ease-in;
+}
+
+.home .btn.animation-Op-Home.Opacity{
+    animation-delay: 0.1s;
+    animation-duration: 5s;
+    animation-name: opacity;
+    animation-timing-function: ease-in;
+}
+
+
+/* Animation  Home */

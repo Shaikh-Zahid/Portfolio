@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+
+    <!-- Css Link -->
+
+    <link rel="stylesheet" href="style/Home.css" type="text/css" />
+
+    <link rel="stylesheet" href="style/About.css" type="text/css" />
+
+    <link rel="stylesheet" href="style/Service.css" type="text/css" />
+
+    <link rel="stylesheet" href="style/Portfolio.css" type="text/css" />
+
+    <link rel="stylesheet" href="style/Contact.css" type="text/css" />
+
+    <link rel="stylesheet" href="style/color-1.css" type="text/css" class="alternate-style" title="color-1" disabled />
+
+    <link rel="stylesheet" href="style/color-2.css" type="text/css" class="alternate-style" title="color-2" disabled />
+
+    <link rel="stylesheet" href="style/color-3.css" type="text/css" class="alternate-style" title="color-3" disabled />
+
+    <link rel="stylesheet" href="style/color-4.css" type="text/css" class="alternate-style" title="color-4" disabled />
+
+    <link rel="stylesheet" href="style/color-5.css" type="text/css" class="alternate-style" title="color-5" disabled />
+
+    <link rel="stylesheet" href="style/style-switcher.css" type="text/css">
+
+    <link rel="stylesheet" href="style/Animation.css" type="text/css">
+    
+    <link rel="stylesheet" href="style/Media.css" type="text/css" />
+
+    <!-- Css Link -->
+
+
+    <!-- Font Awesome Link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awesome Link -->
+
+    <!-- Bootstrap Link -->
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+
+    <!-- Bootstrap Link -->
+
+    <!-- Google Font Style -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&family=Titan+One&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Font Style -->
+
+    <!-- JQuery Link Animation -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"
+        integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JQuery Link Animation -->
+
+
+    <!-- Scroll Animation Link -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <!-- Scroll Animation Link -->
+
+</head>
+
+<body>
+
+    <!-- Main-Container-start -->
+
+
+    <div class="main-container">
+
+        <!-- Aside-Start -->
+
+        <div class="aside">
+
+            <div class="logo">
+                <a href="#"><span>A</span>tlas</a>
+            </div>
+
+            <!-- nav-toggle -->
+
+            <div class="nav-toggle">
+                <span></span>
+            </div>
+
+            <!-- nav-toggle -->
+
+
+
+            <!-- Nav-Bar -->
+
+            <ul class="nav">
+
+                <li style="animation-duration: 1s;" onclick="animation_home()">
+                    <a href="#home" class="active">
+                        <i class="fa fa-home"></i>
+                        Home
+                    </a>
+                </li>
+
+
+                <li style="animation-duration: 1.1s;" onclick="animation_about()">
+                    <a href="#about">
+                        <i class="fa fa-user"></i>
+                        About
+                    </a>
+                </li>
+
+                <li style="animation-duration: 1.2s;" onclick="animation_service()">
+                    <a href="#services">
+                        <i class="fa fa-list"></i>
+                        Services
+                    </a>
+                </li>
+
+                <li style="animation-duration: 1.3s;" onclick="animation_portfolio()">
+                    <a href="#portfolio">
+                        <i class="fa fa-briefcase"></i>
+                        Portfolio
+                    </a>
+                </li>
+
+                <li style="animation-duration: 1.4s;" onclick="animation_contact()">
+                    <a href="#contact">
+                        <i class="fa fa-comments"></i>
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Nav-Bar -->
+        </div>
+
+        <!-- Aside End -->
+
+        <!-- Main Content Start -->
+
+        <div class="main-content">
+
+            <!-- Home Section Start  -->
+
+            <section class="home active section" id="home">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="home-info padd-15">
+                            <h3 class="hello animation-Dp-Home Downup"
+                                style="animation-delay: 0.1s; animation-duration: 1s;"> Hello, my name is <span
+                                    class="name"> Shaikh Zahid </span></h3>
+                            <h3 class="my-profession animation-Dp-Home Downup"
+                                style="animation-delay: 0.1s;animation-duration: 2s;"> I'm a <span class="typing"> Web
+                                    designer </span></h3>
+                            <p class=" animation-Dp-Home Downup" style="animation-delay: 0.1s; animation-duration: 3s;">
+                                I'm A Web Designer With Extensive Experience For Over 10 Years.My Expertise Is To
+                                Create And Website Design,Graphic Design, And Many More...
+                            </p>
+
+                            <ul class="home-info-social-icon">
+
+                                <li class="animation-Op-Home Opacity">
+
+                                    <a href="" class="f-facebook"> <i class="fa-brands fa-facebook-f"></i> </a>
+
+                                </li>
+
+                                <li class="animation-Op-Home Opacity">
+
+                                    <a href="" class="f-linkedin"> <i class="fa-brands fa-linkedin-in"></i> </a>
+
+                                </li>
+
+                                <li class="animation-Op-Home Opacity">
+
+                                    <a href="" class="f-twitter"> <i class="fa-brands fa-twitter"></i> </a>
+
+                                </li>
+
+                                <li class="animation-Op-Home Opacity">
+
+                                    <a href="" class="f-instagram"> <i class="fa-brands fa-instagram" aria-hidden="true"></i> </a>
+
+                                </li>
+
+                            </ul>
+
+                            <a href="#" class="btn animation-Op-Home Opacity"> Download CV </a>
+
+                        </div>
+
+                        <div class="home-img padd-15 animation-Sc-Home Scale">
+                            <img src="img/User.jpeg" alt="User">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Home Section End -->
+
+
+
+
+
+            <!-- About Section Start -->
+
+            <section class="about section" id="about">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="about-content padd-15">
+
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3 class="animation-Df-About"> I'm Shaikh Zahid and <span>Web Developer</span></h3>
+                                    <p class="animation-Dp-About"
+                                        style="animation-delay: 0.1s;animation-duration: 1.2s;">Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Dolor nesciunt ex eius
+                                        atque laudantium harum minus ratione, recusandae earum perspiciatis? Voluptates
+                                        odit rem quisquam ipsam eum eius minus saepe pariatur sit vitae quos, iure
+                                        perferendis voluptatibus ducimus sequi quibusdam commodi vero cumque, voluptatem
+                                        porro laboriosam! Dolor labore voluptatem itaque culpa dolorum quas
+                                        exercitationem eos quidem!</p>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+
+                                        <div class="info-item animation-Dp-About padd-15"
+                                            style="animation-delay: 0.1s; animation-duration: 1.4s;">
+                                            <p>Birthday : <span> 16 Nav 2000 </span></p>
+                                        </div>
+
+                                        <div class="info-item animation-Dp-About padd-15"
+                                            style="animation-delay: 0.1s; animation-duration:  1.6s">
+                                            <p>Age : <span> 22 </span></p>
+                                        </div>
+
+                                        <div class="info-item animation-Dp-About padd-15"
+                                            style="animation-delay: 0.1s; animation-duration: 1.8s;">
+                                            <p>Website : <span> www.domain.com </span></p>
+                                        </div>
+
+                                        <div class="info-item animation-Dp-About padd-15"
+                                            style="animation-delay: 0.1s; animation-duration: 2s;">
+                                            <p>Email : <span> zahidShaikhh2000@gmail.com </span></p>
+                                        </div>
+
+                                        <div class="info-item animation-Dp-About padd-15"
+                                            style="animation-delay: 0.1s; animation-duration: 2.4s;">
+                                            <p>Degree : <span> Bsc.it </span></p>
+                                        </div>
+
+                                        <div class="info-item animation-Dp-About padd-15"
+                                            style="animation-delay: 0.1s; animation-duration: 2.6s;">
+                                            <p>Phone : <span> +91 8850520156 </span></p>
+                                        </div>
+
+                                        <div class="info-item animation-Dp-About padd-15"
+                                            style="animation-delay: 0.1s; animation-duration: 2.8s;">
+                                            <p>City : <span> Mumbai </span></p>
+                                        </div>
+
+                                        <div class="info-item animation-Dp-About padd-15"
+                                            style="animation-delay:0.1s; animation-duration: 3s;">
+                                            <p>Birthday : <span> 16 Nav 2000 </span></p>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="buttons padd-15">
+                                                <a href="#contact" data-section-index="1" class="btn animation-Op-About hire-me"
+                                                    style="animation-delay: 0.1s; animation-duration: 4s;"> Hire Me
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="skills padd-15">
+                                    <div class="row">
+
+                                        <div class="skill-item animation-Dp-About padd-15"
+                                            style="animation-delay: 0.1s ;animation-duration: 1.4s;">
+                                            <h5> html </h5>
+                                            <div class="progress">
+                                                <div class="progress-in animation-progress-About"
+                                                    style="width: 95%; animation-delay: 0.8s; animation-duration: 1.5s;">
+                                                </div>
+                                                <div class="skill-percent" id="1"> 95% </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item animation-Dp-About padd-15"
+                                            style="animation-delay: 0.1s; animation-duration: 1.6s;">
+                                            <h5> css </h5>
+                                            <div class="progress">
+                                                <div class="progress-in animation-progress-About"
+                                                    style="width: 85%; animation-delay: 0.8s; animation-duration: 1.7s;">
+                                                </div>
+                                                <div class="skill-percent" id="2"> 85% </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item animation-Dp-About padd-15"
+                                            style="animation-delay: 0.1s; animation-duration: 1.8s;">
+                                            <h5> js </h5>
+                                            <div class="progress">
+                                                <div class="progress-in animation-progress-About"
+                                                    style="width: 85%; animation-delay: 0.8s; animation-duration: 1.9s;">
+                                                </div>
+                                                <div class="skill-percent" id="3"> 85% </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item animation-Dp-About padd-15"
+                                            style="animation-delay: 0.1s ; animation-duration: 2s;">
+                                            <h5> bootstrap </h5>
+                                            <div class="progress">
+                                                <div class="progress-in animation-progress-About"
+                                                    style="width: 80%; animation-delay: 0.8s; animation-duration: 2.1s;">
+                                                </div>
+                                                <div class="skill-percent" id="4"> 80% </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="skill-item animation-Dp-About padd-15"
+                                            style="animation-delay: 0.1s; animation-duration: 2.2s;">
+                                            <h5> reactjs </h5>
+                                            <div class="progress">
+                                                <div class="progress-in animation-progress-About"
+                                                    style="width: 65%; animation-delay: 0.8s;animation-duration: 2.3s;">
+                                                </div>
+                                                <div class="skill-percent" id="5"> 65% </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="skill-item animation-Dp-About padd-15"
+                                            style="animation-delay:0.1s; animation-duration:  2.4s;">
+                                            <h5> tailwindcss </h5>
+                                            <div class="progress">
+                                                <div class="progress-in animation-progress-About"
+                                                    style="width: 70%; animation-delay: 0.8s; animation-duration: 2.5s;">
+                                                </div>
+                                                <div class="skill-percent" id="6"> 75% </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="skill-item animation-Dp-About padd-15"
+                                            style="animation-delay: 0.1s; animation-duration: 2.6s;">
+                                            <h5> mysql </h5>
+                                            <div class="progress">
+                                                <div class="progress-in animation-progress-About"
+                                                    style="width: 75%; animation-delay: 0.8s; animation-duration: 2.7s;">
+                                                </div>
+                                                <div class="skill-percent" id="7"> 75% </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item animation-Dp-About padd-15"
+                                            style="animation-delay: 0.1s; animation-duration: 2.8s;">
+                                            <h5> c++ </h5>
+                                            <div class="progress">
+                                                <div class="progress-in animation-progress-About"
+                                                    style="width: 80%; animation-delay: 0.8s; animation-duration: 2.9s;">
+                                                </div>
+                                                <div class="skill-percent" id="8"> 80% </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="education padd-15">
+                                    <h3 class="title animation-Dp-About"
+                                        style="animation-delay: 0.1s; animation-duration: 4.4s;"> Education </h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline animation-Sc-About shadow-dark"
+                                                style="animation-delay: 0.1s; animation-duration: 5s;">
+
+                                                <!-- timeline item Start-->
+
+                                                <div class="timeline-item animation-Dp-About"
+                                                    style="animation-delay: 0.4s; animation-duration: 1s;">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2013 - 2015
+                                                    </h3>
+                                                    <h4 class="timeline-title"> Master in Computer Science </h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur
+                                                        adipisicing elit. Inventore impedit earum cumque accusantium
+                                                        dolorem ipsa. Enim officiis sequi excepturi accusamus cumque
+                                                        asperiores odio harum molestias!</p>
+                                                </div>
+
+
+                                                <div class="timeline-item animation-Dp-About"
+                                                    style="animation-delay: 0.4s; animation-duration: 2s;">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2013 - 2015
+                                                    </h3>
+                                                    <h4 class="timeline-title"> Master in Computer Science </h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur
+                                                        adipisicing elit. Inventore impedit earum cumque accusantium
+                                                        dolorem ipsa. Enim officiis sequi excepturi accusamus cumque
+                                                        asperiores odio harum molestias!</p>
+                                                </div>
+
+
+                                                <div class="timeline-item animation-Dp-About"
+                                                    style="animation-delay: 0.4s; animation-duration: 3s;">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2013 - 2015
+                                                    </h3>
+                                                    <h4 class="timeline-title"> Master in Computer Science </h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur
+                                                        adipisicing elit. Inventore impedit earum cumque accusantium
+                                                        dolorem ipsa. Enim officiis sequi excepturi accusamus cumque
+                                                        asperiores odio harum molestias!</p>
+                                                </div>
+
+                                                <!-- timeline item End -->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="experience padd-15">
+                                    <h3 class="title animation-Dp-About"
+                                        style="animation-delay: 0.1s ;animation-duration: 4.6s;"> Experience </h3>
+                                    <div class="row">
+                                        <div class="timeline-box  padd-15">
+                                            <div class="timeline animation-Sc-About shadow-dark"
+                                                style="animation-delay: 0.1s ;animation-duration: 5s;">
+
+                                                <!-- timeline item Start-->
+
+                                                <div class="timeline-item animation-Dp-About"
+                                                    style=" animation-delay: 0.4s; animation-duration: 1s;">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2013 - 2015
+                                                    </h3>
+                                                    <h4 class="timeline-title"> Master in Computer Science </h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur
+                                                        adipisicing elit. Inventore impedit earum cumque accusantium
+                                                        dolorem ipsa. Enim officiis sequi excepturi accusamus cumque
+                                                        asperiores odio harum molestias!</p>
+                                                </div>
+
+
+                                                <div class="timeline-item animation-Dp-About"
+                                                    style="animation-delay: 0.4s; animation-duration: 2s;">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2013 - 2015
+                                                    </h3>
+                                                    <h4 class="timeline-title"> Master in Computer Science </h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur
+                                                        adipisicing elit. Inventore impedit earum cumque accusantium
+                                                        dolorem ipsa. Enim officiis sequi excepturi accusamus cumque
+                                                        asperiores odio harum molestias!</p>
+                                                </div>
+
+
+                                                <div class="timeline-item animation-Dp-About"
+                                                    style="animation-delay: 0.4s; animation-duration: 3s;">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2013 - 2015
+                                                    </h3>
+                                                    <h4 class="timeline-title"> Master in Computer Science </h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur
+                                                        adipisicing elit. Inventore impedit earum cumque accusantium
+                                                        dolorem ipsa. Enim officiis sequi excepturi accusamus cumque
+                                                        asperiores odio harum molestias!</p>
+                                                </div>
+
+                                                <!-- timeline item End -->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section End -->
+
+
+
+
+
+
+
+
+            <!-- Services Section Start -->
+
+            <section class="service section" id="services">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2> Services </h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <!-- Service item Start -->
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner animation-Dp-Service"
+                                style="animation-delay: 0.1s; animation-duration: 1.2s;">
+
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+
+                                <h4> Web Design </h4>
+                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod at rerum iure.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner animation-Dp-Service"
+                                style="animation-delay: 0.1s; animation-duration: 1.4s;">
+
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+
+                                <h4> Web Design </h4>
+                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod at rerum iure.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner animation-Dp-Service"
+                                style="animation-delay: 0.1s; animation-duration: 1.6s;">
+
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+
+                                <h4> Web Design </h4>
+                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod at rerum iure.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner animation-Dp-Service"
+                                style="animation-delay: 0.1s; animation-duration: 1.8s;">
+
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+
+                                <h4> Web Design </h4>
+                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod at rerum iure.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner animation-Dp-Service"
+                                style="animation-delay: 0.1s; animation-duration: 2s;">
+
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+
+                                <h4> Web Design </h4>
+                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod at rerum iure.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner animation-Dp-Service"
+                                style="animation-delay: 0.1s; animation-duration: 2.2s;">
+
+                                <div class="icon">
+                                    <i class="fa fa-bullhorn"></i>
+                                </div>
+
+                                <h4> Web Design </h4>
+                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod at rerum iure.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service item End -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section End -->
+
+
+
+
+
+
+
+            <!-- Portfolio Section Start -->
+
+
+            <section class="portfolio section" id="portfolio">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2> Portfolio </h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="portfolio-heading animation-Dp-Portfolio padd-15"
+                            style="animation-delay: 0.1s; animation-duration: 1s;">
+                            <h2> My Last Projects : </h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <!-- Portfolio item start -->
+
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner animation-Op-Portfolio shadow-dark"
+                                style="animation-delay: 0.1s; animation-duration: 1.5s;">
+                                <div class="portfolio-img">
+                                    <div class="portfolio-project-img" style="background-image: url('img-project/project2.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner animation-Op-Portfolio shadow-dark"
+                                style="animation-delay: 0.1s; animation-duration: 2s;">
+                                <div class="portfolio-img">
+                                    <div class="portfolio-project-img" style="background-image: url('img-project/project3.jpg');">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner animation-Op-Portfolio shadow-dark"
+                                style="animation-delay: 0.1s; animation-duration: 2.5s;">
+                                <div class="portfolio-img">
+                                    <div class="portfolio-project-img" style="background-image: url('img-project/project4.jpg');">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner animation-Op-Portfolio shadow-dark"
+                                style="animation-delay: 0.1s; animation-duration: 3s;">
+                                <div class="portfolio-img">
+                                    <div class="portfolio-project-img"
+                                        style="background-image: url('img-project/project5.jpg'); background-size: cover;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner animation-Op-Portfolio shadow-dark"
+                                style="animation-delay: 0.1s; animation-duration: 3.5s;">
+                                <div class="portfolio-img">
+                                    <div class="portfolio-project-img animation-scroll"
+                                        style="background-image: url('img-project/project6.jpg')"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner animation-Op-Portfolio shadow-dark"
+                                style="animation-delay: 0.1s; animation-duration: 4s;">
+                                <div class="portfolio-img">
+                                    <div class="portfolio-project-img animation-scroll"
+                                        style="background-image: url('img-project/project7.jpg');background-repeat: no-repeat;background-size: cover;transition-duration: 1s;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner animation-Op-Portfolio shadow-dark"
+                                style="animation-delay: 0.1s; animation-duration: 4.5s;">
+                                <div class="portfolio-img">
+                                    <div class="portfolio-project-img animation-scroll"
+                                        style="background-image: url('img-project/project8.jpg');background-repeat: no-repeat;background-size: cover;transition-duration: 0.9s;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Portfolio item end -->
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Portfolio Section End -->
+
+
+
+
+
+
+
+            <!-- Contact Section Start -->
+
+            <section class="contact section" id="contact">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2> Contact Me </h2>
+                        </div>
+                    </div>
+
+                    <h3 class="contact-title animation-Dp-Contact"
+                        style="animation-delay: 0.1s;animation-duration: 1.2s;"> Have You Any Questions ? </h3>
+
+                    <h4 class="contact-sub-title animation-Dp-Contact"
+                        style="animation-delay: 0.1s;animation-duration: 1.4s;"> I'M AT YOUR SERVICES </h4>
+
+                    <div class="row">
+
+                        <!-- Contact info item Start -->
+
+                        <div class="contact-info-item animation-Op-Contact padd-15"
+                            style="animation-delay: 0.1s;animation-duration: 1.6s;">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <h4> Call Us On </h4>
+                            <p> +91 8850520156 </p>
+                        </div>
+
+                        <div class="contact-info-item animation-Op-Contact padd-15"
+                            style="animation-delay: 0.1s;animation-duration: 1.8s;">
+                            <div class="icon">
+                                <i class="fa fa-map-marker-alt"></i>
+                            </div>
+                            <h4> Address </h4>
+                            <p> Andheri East Mumbai No 400069 </p>
+                        </div>
+
+
+                        <div class="contact-info-item animation-Op-Contact padd-15"
+                            style="animation-delay: 0.1s;animation-duration: 2s;">
+                            <div class="icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <h4> Email </h4>
+                            <p> zahidShaikhh2000@gmail.com </p>
+                        </div>
+
+
+                        <div class="contact-info-item animation-Op-Contact padd-15"
+                            style="animation-delay: 0.1s;animation-duration: 2.4s;">
+                            <div class="icon">
+                                <i class="fa fa-globe-europe"></i>
+                            </div>
+                            <h4> Website </h4>
+                            <p> www.domain.com </p>
+                        </div>
+
+                        <!-- Contact info item End -->
+
+                    </div>
+
+
+                    <h3 class="contact-title animation-Dp-Contact padd-15"
+                        style="animation-delay: 0.1s;animation-duration: 2.6s;"> SEND ME AN EMAIL </h3>
+
+                    <h4 class="contact-sub-title animation-Dp-Contact padd-15"
+                        style="animation-delay: 0.1s;animation-duration: 2.8s;"> I'M VERY RESPOSIVE TO MESSAGES </h4>
+
+                    <!-- Contact Form Start -->
+
+                    <div class="row">
+                        <div class="contact-form padd-15">
+
+                            <div class="row">
+
+                                <div class="form-item animation-Dp-Contact col-6 padd-15"
+                                    style="animation-delay: 0.1s;animation-duration: 3s;">
+                                    <div class="form-grouop">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-item animation-Dp-Contact col-6 padd-15"
+                                    style="animation-delay: 0.1s;animation-duration: 3.4s;">
+                                    <div class="form-grouop">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="row">
+                                <div class="form-item animation-Dp-Contact col-12 padd-15"
+                                    style="animation-delay: 0.1s;animation-duration: 3.6s;">
+                                    <div class="form-grouop">
+                                        <input type="email" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="form-item animation-Dp-Contact col-12 padd-15"
+                                    style="animation-delay: 0.1s;animation-duration: 3.8s;">
+                                    <div class="form-grouop">
+                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-item animation-Dp-Contact col-12 padd-15"
+                                    style="animation-delay: 0.1s;animation-duration: 4s;">
+                                    <div class="form-grouop">
+                                        <button type="submit" class="btn"> Send Message </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Contact Form End -->
+
+                </div>
+            </section>
+
+
+            <!-- Contact Section End -->
+
+        </div>
+
+        <!-- Main Content End -->
+    </div>
+
+    <!-- Main-Container-End -->
+
+
+
+
+
+    <!-- Style Switch Start -->
+
+
+    <div class="style-switcher">
+
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+
+        <h4> Theme Colors </h4>
+
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+
+    </div>
+
+    <!-- Style Switch End -->
+</body>
+
+<!-- Javascript Color Change & Dark Mode -->
+
+<script src="Javascript/script.js"></script>
+
+<!-- Javascript Color Change & Dark Mode -->
+
+
+
+
+
+
+<!-- Animation Javascript  -->
+
+<script src="Javascript/index1.js"></script>
+
+<script src="Javascript/animation.js"></script>
+
+<!-- Animation Javascript  -->
+
+</html>
